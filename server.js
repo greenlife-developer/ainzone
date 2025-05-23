@@ -3,7 +3,7 @@ const express = require("express");
 // const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const errorHandler = require("./middleWare/errorMiddleware");
+const errorHandler = require("./middleware/errorMiddleWare");
 const cookieParser = require("cookie-parser");
 const path = require("path");
 
