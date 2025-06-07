@@ -8,7 +8,7 @@ const cookieParser = require("cookie-parser");
 const path = require("path");
 
 const app = express();
-
+    
 // Middlewares
 app.use(express.json());
 app.use(cookieParser());
