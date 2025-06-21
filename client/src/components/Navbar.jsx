@@ -16,7 +16,7 @@ export default function Navbar() {
           <li><Link to="/about" className="hover:text-[#5bb3a3]">About</Link></li>
           <li><Link to="/blog" className="hover:text-[#5bb3a3]">Blog</Link></li>
           <li><Link to="/resources" className="hover:text-[#5bb3a3]">Resources</Link></li>
-          <li><Link to="/freebies" className="hover:text-[#5bb3a3]">Freebies</Link></li>
+          {/* <li><Link to="/freebies" className="hover:text-[#5bb3a3]">Freebies</Link></li> */}
           <li><Link to="/contact" className="hover:text-[#5bb3a3]">Contact</Link></li>
           <li><Link to="/shop" className="hover:text-[#5bb3a3]">Shop</Link></li>
         </ul>

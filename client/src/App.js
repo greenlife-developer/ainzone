@@ -8,6 +8,9 @@ import Blog from './pages/Blog';
 // import Shop from './pages/Shop';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Resources from './pages/Resources';
+import Shop from './pages/Shop';
+import Contact from './pages/Contact';
 
 export default function App() {
   return (
@@ -19,10 +22,10 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
-            {/* <Route path="/resources" element={<Resources />} />
-            <Route path="/freebies" element={<Freebies />} />
+            <Route path="/resources" element={<Resources />} />
+            {/* <Route path="/freebies" element={<Freebies />} /> */}
             <Route path="/contact" element={<Contact />} />
-            <Route path="/shop" element={<Shop />} /> */}
+            <Route path="/shop" element={<Shop />} />
             <Route path="*" element={<div className="text-center p-4 flex"><h1 className='pe-2'>Page not found</h1> <Link to="/">Home</Link></div>} />
           </Routes>
         </main>
