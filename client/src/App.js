@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Resources from './pages/Resources';
 import Shop from './pages/Shop';
 import Contact from './pages/Contact';
+import BlogView from "./pages/BlogView";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogView />} />
             <Route path="/resources" element={<Resources />} />
             {/* <Route path="/freebies" element={<Freebies />} /> */}
             <Route path="/contact" element={<Contact />} />

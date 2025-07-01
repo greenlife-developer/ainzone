@@ -7,19 +7,24 @@ import fiverrlogo from "../assets/images/fiverr.png";
 export default function Resources() {
   return (
     <main className="bg-[#faf4f0] px-6 py-16 text-gray-800">
+      {/* Intro Section */}
       <section className="max-w-5xl mx-auto text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#5bb3a3] mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#0C3E83] mb-4">
           Affiliate Marketing Resources for Beginners & Hustlers
         </h2>
-        <p className="text-base md:text-lg text-gray-600">
+        <p className="text-base md:text-lg text-gray-700">
           Ready to grow your online income? These are the exact tools, platforms, and guides I use (and recommend) to build a smart affiliate business — even with zero experience.
         </p>
       </section>
 
       {/* Tools Section */}
       <section className="max-w-5xl mx-auto mb-20">
-        <h3 className="text-2xl font-semibold text-[#5bb3a3] mb-4 text-center">Tools to Launch & Grow</h3>
-        <p className="text-sm text-center text-gray-500 mb-8">(These are affiliate links — no extra cost to you, but they help support the site!)</p>
+        <h3 className="text-2xl font-semibold text-[#0C3E83] mb-4 text-center">
+          Tools to Launch & Grow
+        </h3>
+        <p className="text-sm text-center text-gray-500 mb-8">
+          (These are affiliate links — no extra cost to you, but they help support the site!)
+        </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
           {[
@@ -56,11 +61,19 @@ export default function Resources() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={img} alt={title} className="w-20 h-14 object-contain rounded-md" />
+              <img
+                src={img}
+                alt={title}
+                className="w-20 h-14 object-contain rounded-md"
+              />
               <div>
-                <h4 className="font-semibold text-[#5bb3a3]">{title}</h4>
+                <h4 className="font-semibold text-[#0C3E83]">{title}</h4>
                 <p className="text-sm text-gray-600">{desc}</p>
-                {cta && <p className="text-sm text-[#5bb3a3] font-medium mt-1">{cta}</p>}
+                {cta && (
+                  <p className="text-sm text-[#0C3E83] font-medium mt-1">
+                    {cta}
+                  </p>
+                )}
               </div>
             </a>
           ))}
@@ -69,7 +82,9 @@ export default function Resources() {
 
       {/* Affiliate Kits Section */}
       <section className="max-w-5xl mx-auto mb-20 text-center">
-        <h3 className="text-2xl font-semibold text-[#5bb3a3] mb-6">Affiliate Starter Kits</h3>
+        <h3 className="text-2xl font-semibold text-[#0C3E83] mb-6">
+          Affiliate Starter Kits
+        </h3>
         <p className="text-sm text-gray-500 mb-8">(Free guides — coming soon!)</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -80,7 +95,7 @@ export default function Resources() {
           ].map((kit, idx) => (
             <div
               key={idx}
-              className="bg-white border border-dashed border-[#5bb3a3] p-6 rounded-xl text-sm text-gray-700 shadow hover:shadow-md transition-all"
+              className="bg-white border border-dashed border-[#0C3E83] p-6 rounded-xl text-sm text-gray-700 shadow hover:shadow-md transition-all"
             >
               {kit}
             </div>
@@ -88,11 +103,16 @@ export default function Resources() {
         </div>
       </section>
 
-      {/* Learn and Earn Section */}
+      {/* Learn & Earn Section */}
       <section className="max-w-5xl mx-auto mb-20 text-center">
-        <h3 className="text-2xl font-semibold text-[#5bb3a3] mb-6">Learn & Earn</h3>
+        <h3 className="text-2xl font-semibold text-[#0C3E83] mb-6">
+          Learn & Earn
+        </h3>
         <ul className="text-left text-gray-700 text-sm space-y-4 list-inside list-disc md:px-10">
-          <li className="pl-2">Blog posts on niches, SEO, AI content creation, and affiliate strategy</li>
+          <li className="pl-2">
+            Blog posts on niches, SEO, AI content creation, and affiliate
+            strategy
+          </li>
           <li className="pl-2">Downloadable guides & ebooks</li>
           <li className="pl-2">Coming Soon: Digital Resource Shop</li>
         </ul>
@@ -100,9 +120,17 @@ export default function Resources() {
 
       {/* Subscribe CTA */}
       <section className="max-w-2xl mx-auto bg-white shadow-md p-8 rounded-xl text-center">
-        <h3 className="text-xl font-bold text-[#5bb3a3] mb-2">Join the Affiliate Growth List</h3>
-        <p className="text-sm text-gray-600 mb-4">Get exclusive affiliate marketing tips, free tools, and fresh content straight to your inbox.</p>
-        <a href="mailto:admin@ainzone.com" className="inline-block bg-[#5bb3a3] text-white px-6 py-3 rounded-full hover:bg-[#49a393] transition-all">
+        <h3 className="text-xl font-bold text-[#0C3E83] mb-2">
+          Join the Affiliate Growth List
+        </h3>
+        <p className="text-sm text-gray-600 mb-4">
+          Get exclusive affiliate marketing tips, free tools, and fresh content
+          straight to your inbox.
+        </p>
+        <a
+          href="mailto:admin@ainzone.com"
+          className="inline-block bg-[#0C3E83] text-white px-6 py-3 rounded-full hover:bg-[#032B52] transition-all"
+        >
           Contact or Subscribe: admin@ainzone.com
         </a>
       </section>
