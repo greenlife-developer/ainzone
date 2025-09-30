@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
 // import Resources from './pages/Resources';
-// import Freebies from './pages/Freebies';
+import Freebies from './pages/Freebies';
 // import Contact from './pages/Contact';
 // import Shop from './pages/Shop';
 import Navbar from './components/Navbar';
@@ -25,7 +25,7 @@ export default function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogView />} />
             <Route path="/resources" element={<Resources />} />
-            {/* <Route path="/freebies" element={<Freebies />} /> */}
+            <Route path="/freebies" element={<Freebies />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="*" element={<div className="text-center p-4 flex"><h1 className='pe-2'>Page not found</h1> <Link to="/">Home</Link></div>} />
